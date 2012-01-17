@@ -1,0 +1,717 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Clean CV</title>
+
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="css/colorbox.css"/>
+<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+
+<!--[if lt IE 8]>
+<link href="css/styleie.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+
+
+<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="colorbox/jquery.colorbox.js"></script>
+<script src="js/cufon.js" type="text/javascript"></script>
+<script src="js/Yanone_Kaffeesatz_400.font.js" type="text/javascript"></script>
+<script src="js/Opificio_400.font.js" type="text/javascript"></script>
+<script src="js/Journal_400.font.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.flip.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+
+
+
+
+<script type="text/javascript"> 
+var control = "element1";
+$(document).ready(function() {
+						    Cufon.replace('h1', {fontWeight: '400',fontFamily: 'Yanone Kaffeesatz'});
+						     Cufon.replace('#menu li a', {fontWeight: '400', hover:true, fontFamily: 'Yanone Kaffeesatz'});
+						     Cufon.replace('h2', {fontWeight: '400', hover:true, fontFamily: 'Journal'});
+						     Cufon.replace('.left h2', {fontWeight: '400',fontFamily: 'Yanone Kaffeesatz'});
+						     Cufon.replace('h3', {fontWeight: '400',fontFamily: 'Yanone Kaffeesatz'});
+						  $(".menu li a").click(function(){
+									$(".menu li a").removeClass("activo");
+									$(this).addClass("activo");					 
+									var active = $(this).attr("id");
+									if(control!=active){
+									$("."+control).fadeOut(function(){
+																	$("."+active).fadeIn(1000);
+																	control= active;
+																	});
+									
+									}
+									  });
+
+							 
+						     //Animate social button
+						     $(".soc a").mouseover(function(){
+						     		$(this).animate({
+									    marginTop: "-5px"
+									   }, 500, function() {
+									  });
+
+						     	});
+						    
+						     $(".soc a").mouseout(function(){
+						     		$(this).animate({
+									    marginTop: "-95px"
+									   }, 500, function() {
+									  });
+
+						     	});
+						    
+					$("a[rel='example1']").colorbox();
+					
+					var cont = 0;
+					$(".top").mouseover(function(){
+						$('.top').animate({
+							 marginTop: '-=1'
+							  }, 70, function() {
+							  });
+
+						});
+						
+						$(".top").mouseout(function(){
+						$('.top').animate({
+							 marginTop: '+=1'
+							  }, 70, function() {
+							  });
+
+						});
+					$(".top").click(function(){
+						if(cont==0){
+						$('.info').animate({
+							 marginTop: '-=250'
+							  }, 700, function() {
+							  });
+						cont=1;
+						}else if(cont==1){
+						$('.info').animate({
+							 marginTop: '+=250'
+							  }, 700, function() {
+							  });
+							  cont=0;
+						}
+						});
+										   
+});
+</script>
+
+
+</head>
+
+<body>
+
+	<!--Begin contheader -->
+	<div class="contheader">
+	    <!--Begin contmenu -->
+		<div class="contmenu">
+		   <!--Begin social --> 
+	       <div class="social">
+	        	<div class="soc" id="r1"><a href="" id="social1">Facebook</a></div>
+                <div class="soc" id="r2"><a href="" id="social2">Twitter</a></div>
+                <div class="soc" id="r3"><a href="" id="social3">Myspace</a></div>
+	        </div>
+	        <!--End social --> 
+	        
+        <!--Begin menup --> 
+        <div class="menup">
+            <ul class="menu" id="menu">
+            	<li><a id="element1"  class="activo"> <span>Profile</span><br/> EDUCATION</a></li>
+                <li><a id="element2"> <span>Work</span><br/> EXPERIENCE</a></li>
+                <li><a id="element3"> <span>Portfolio</span><br/> OF WORK</a></li>
+                <li><a id="element4"> <span>Skill</span><br/> TECHNICAL</a></li>
+                <li><a id="element5"> <span>Other</span><br/> INFORMATION</a></li>
+               
+            </ul>
+        </div>
+        <!--End menup -->
+        
+       <div style="clear:both;"></div>  
+	     <div class="cur"></div>
+	     <div class="cur2"></div>
+	</div>
+     <!--End contmenu -->
+	
+	 <!--Begin header -->
+    <div class="header" >
+     <!--End part1 -->
+     <div class="part1">
+    	<!--Begin logo --> 
+    	<div class="logo" >
+            <a  class="image" id="logo"><img src="images/photo.png" alt="Catherine Roberts" /></a> 
+        </div>
+        <!--End logo --> 
+        
+                
+        <!--Begin info --> 
+        <div class="info" >
+             <h1>Catherine <span class="orange">Roberts</span></h1>
+             <h3 class="mail">info@somedomain.com</h3>
+             <div class="clear"></div>
+		     <div class="line"></div>
+             <h2 class="work">Web Designer</h2>
+             <h2 class="telf">622 234 645</h2>
+             <div class="clear"></div>
+             <div class="line2"></div>
+        </div>
+         <!--End info -->
+
+		<!--End info2 -->
+		<div class="info2" >
+            <h1>Catherine <span class="orange">Roberts</span></h1>
+            <h3 class="mail">27 Years</h3>
+       		<div class="clear"></div>
+			<div class="line"></div>
+            <h2 class="work">31 Fake St, Imagination Land</h2>
+            <h2 class="telf">Sydney Australia</h2>
+            <div class="clear"></div>
+            <div class="line2"></div>
+        </div>
+         <!--End info2 -->
+
+		<div class="clear"></div>
+         
+    </div>
+    <!--End header -->
+    <div class="clear"></div>
+   </div>
+   <!--End contheader -->
+      
+  <!--Begin botones -->
+  <div class="cont2">
+  <div class="botones">
+	<a href="#" class="top" >top</a>
+  </div>
+  <!--End botones -->
+  </div>
+</div>
+<!--End contheader -->
+  
+   
+  
+  
+ <div class="wrap">
+   
+   <!--Main page posts -->
+   <div class="main_page_posts">
+   
+   
+    <div class="element1">
+    <!--Begin contleft -->
+    <div class="contleft"> 
+     	<div class="left">
+      <h2 style="text-align:right;">Education<br/><span class="orange">Profile</span></h2>		</div>
+     </div>
+     <!--End contleft --> 
+    
+    
+   
+        <!--  Begin post -->
+        <div class="post">
+        	<div class="post_content">
+            	<div  class="partcontent">
+            	
+                <h3>The Graduate Center, City University of New York, NY</h3>
+                <p class="date">APRIL 2009 - JANUARY 2011</p>
+                <p>Ph.D. in military history; minor in American history (2001). Dissertation: "A Winter Campaign: General Philip H. Sheridan's Operations on the Southern Plains, 1868-69"</p>
+                
+                <h3>Drew University, Madison, NJ</h3>
+                <p class="date">DECEMBER 2005 - MARCH 2009</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                
+                <h3>College of St. Elizabeth, Madison, NJ</h3>
+                <p class="date">OCTOBER 2000 - JUNE 2005</p>
+                <p>Education 251: Psychology of Learning -- Adolescent; Education 252: Human Intercultural Problems in Education (1977-1978)</p>
+                
+                <h3>Drew University, Madison, NJ</h3>
+                <p class="date">DECEMBER 2005 - MARCH 2009</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+            	</div>
+                  <!--  End content1 -->
+            </div>
+             <!--  End post_content -->    
+        </div>
+        <!--  End post -->
+       
+         </div>
+          <!-- End contright -->
+          <div style="clear:both">
+       </div>
+       
+       
+       
+       
+         <div class="element2">
+   <div class="contleft"> 
+     	<div class="left">
+      <h2 style="text-align:right;">Work<br/><span class="orange">Experience</span></h2>		</div>
+     </div>
+        
+        <!--  Begin post -->
+        <div class="post">
+        	<div class="post_content">
+            	<div class="partcontent">
+            	
+                <h3>Senior Project Manager</h3>
+                <p class="date">JULY 2008 - PRESENT</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.</p>
+                
+                <h3>Front End Developer</h3>
+                <p class="date">APRIL 2007 - AUGUST 2008</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum.</p>
+               
+               
+                <h3>Senior Project Manager</h3>
+                <p class="date">MAY 2005 - DECEMBER 2007</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.</p>
+
+ <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.</p>
+
+            	</div>
+                  <!--  End content1 -->
+            </div>
+        </div>
+        <!--  End post -->
+         </div>
+          <!-- End contright -->
+          <div style="clear:both">
+       </div>
+       
+       
+       
+          <div class="element3">
+   <div class="contleft"> 
+     	<div class="left">
+      <h2 style="text-align:right;">Portfolio<br/><span class="orange">Of Work</span></h2>		</div>
+     </div>
+        
+        
+        <!--  Begin post -->
+        <div class="post">
+        	<div class="post_content">
+            	<div class="partcontent">
+            	
+            	<div class="sponsorListHolder">
+                				<div class="sponsor" title="Click to flip">
+					<div class="sponsorFlip">
+						<img src="img/sponsors/f1.jpg" alt="More about ebay" />
+					</div>
+					
+					<div class="sponsorData">
+						<div class="sponsorDescription">
+							<h4>DESIGN AND DEVELOPER</h4><span class="orange">by Catherine</span>
+						</div>
+
+					</div>
+				</div>
+				
+				
+				<div class="sponsor" title="Click to flip">
+					<div class="sponsorFlip">
+						<img src="img/sponsors/f2.jpg" alt="More about mysql" />
+
+					</div>
+					
+					<div class="sponsorData">
+						<div class="sponsorDescription">
+							<h4>DESIGN</h4><span class="orange">by Catherine</span>
+						</div>
+							<div class="sponsorURL">
+							<a href="#" target="_blank" title="more">+ more</a>
+						</div>
+
+					</div>
+
+				</div>
+				
+				<div class="sponsor" title="Click to flip">
+					<div class="sponsorFlip">
+						<img src="img/sponsors/f3.jpg" alt="More about mysql" />
+
+					</div>
+					
+					<div class="sponsorData">
+						<div class="sponsorDescription">
+							<h4>DESIGN AND DEVELOPER</h4><span class="orange">by Catherine</span>
+						</div>
+						<div class="sponsorURL">
+							<a href="#" target="_blank" title="more">+ more</a>
+						</div>
+					</div>
+
+				</div>
+
+
+				<div class="sponsor" title="Click to flip">
+					<div class="sponsorFlip">
+						<img src="img/sponsors/f4.jpg" alt="More about mysql" />
+
+					</div>
+					
+					<div class="sponsorData">
+						<div class="sponsorDescription">
+							<h4>DESIGN AND DEVELOPER</h4><span class="orange">by Catherine</span>
+						</div>
+						<div class="sponsorURL">
+							<a href="#" target="_blank" title="more">+ more</a>
+						</div>
+					</div>
+
+				</div>
+
+
+				
+			<div class="sponsor" title="Click to flip">
+					<div class="sponsorFlip">
+						<img src="img/sponsors/f5.jpg" alt="More about mysql" />
+
+					</div>
+					
+					<div class="sponsorData">
+						<div class="sponsorDescription">
+							<h4>DESIGN AND DEVELOPER</h4><span class="orange">by Catherine</span>
+						</div>
+						<div class="sponsorURL">
+							<a href="#" target="_blank" title="more">+ more</a>
+						</div>
+					</div>
+
+				</div>
+
+
+				<div class="sponsor" title="Click to flip">
+					<div class="sponsorFlip">
+						<img src="img/sponsors/f6.jpg" alt="More about mysql" />
+					</div>
+					
+					<div class="sponsorData">
+						<div class="sponsorDescription">
+							<h4>DESIGN AND DEVELOPER</h4><span class="orange">by Catherine</span>
+													</div>
+						<div class="sponsorURL">
+							<a href="#" target="_blank" title="more">+ more</a>
+						</div>
+					</div>
+
+				</div>
+
+
+				<div class="sponsor" title="Click to flip">
+					<div class="sponsorFlip">
+						<img src="img/sponsors/f1.jpg" alt="More about mysql" />
+
+					</div>
+					
+					<div class="sponsorData">
+						<div class="sponsorDescription">
+							<h4>DESIGN AND DEVELOPER</h4><span class="orange">by Catherine</span>
+						</div>
+						<div class="sponsorURL">
+							<a href="#" target="_blank" title="more" >+ more</a>
+						</div>
+					</div>
+
+				</div>
+
+
+				<div class="sponsor" title="Click to flip">
+					<div class="sponsorFlip">
+						<img src="img/sponsors/f2.jpg" alt="More about mysql" />
+
+					</div>
+					
+					<div class="sponsorData">
+						<div class="sponsorDescription">
+							<h4>DESIGN AND DEVELOPER</h4><span class="orange">by Catherine</span>
+						</div>
+						<div class="sponsorURL">
+							<a href="#" target="_blank" title="more">+ more</a>
+						</div>
+					</div>
+
+				</div>
+
+
+			<div class="sponsor" title="Click to flip">
+					<div class="sponsorFlip">
+						<img src="img/sponsors/f3.jpg" alt="More about mysql" />
+
+					</div>
+					
+					<div class="sponsorData">
+						<div class="sponsorDescription">
+							<h4>DESIGN AND DEVELOPER</h4><span class="orange">by Catherine</span>
+						</div>
+						<div class="sponsorURL">
+							<a href="#" target="_blank" title="more">+ more</a>
+						</div>
+					</div>
+
+				</div>
+
+
+			<div class="sponsor" title="Click to flip">
+					<div class="sponsorFlip">
+						<img src="img/sponsors/f4.jpg" alt="More about mysql" />
+
+					</div>
+					
+					<div class="sponsorData">
+						<div class="sponsorDescription">
+							<h4>DESIGN AND DEVELOPER</h4><span class="orange">by Catherine</span>
+						</div>
+						<div class="sponsorURL">
+							<a href="#" target="_blank" title="more">+ more</a>
+						</div>
+					</div>
+
+				</div>
+
+
+				<div class="sponsor" title="Click to flip">
+					<div class="sponsorFlip">
+						<img src="img/sponsors/f5.jpg" alt="More about mysql" />
+
+					</div>
+					
+					<div class="sponsorData">
+						<div class="sponsorDescription">
+							<h4>DESIGN AND DEVELOPER</h4><span class="orange">by Catherine</span>
+						</div>
+						<div class="sponsorURL">
+							<a href="#" target="_blank" title="more">+ more</a>
+						</div>
+					</div>
+
+				</div>
+
+
+				<div class="sponsor" title="Click to flip">
+					<div class="sponsorFlip">
+						<img src="img/sponsors/f6.jpg" alt="More about mysql" />
+
+					</div>
+					
+					<div class="sponsorData">
+						<div class="sponsorDescription">
+							<h4>DESIGN AND DEVELOPER</h4><span class="orange">by Catherine</span>
+						</div>
+						<div class="sponsorURL">
+							<a href="#" target="_blank" title="more">+ more</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+            	</div>
+                  <!--  End content1 -->
+            </div>
+        </div>
+        <!--  End post -->
+       
+         </div>
+          <!-- End contright -->
+          <div style="clear:both">
+       </div>
+       
+       
+       
+       
+             <div class="element4">
+   
+    <div class="contleft"> 
+     	<div class="left">
+      <h2 style="text-align:right;">Education<br/><span class="orange">Profile</span></h2>		</div>
+     </div>
+        
+        <!--  Begin post -->
+        <div class="post">
+        	<div class="post_content">
+            	<div  class="partcontent">
+            	
+                <ul class="tips">
+                	<li><h3>Adobe Photoshop</h3>
+                        <span class="rig">
+                            <img src="images/star2.gif" alt="Star" />
+                            <img src="images/star2.gif" alt="Star" />
+                            <img src="images/star2.gif" alt="Star" />
+                            <img src="images/star1.gif" alt="Star" />
+                            <img src="images/star1.gif" alt="Star" />
+                        </span>
+                    </li>
+                    <li><h3>Adobe Illustrator</h3>
+                    	<span class="rig">
+                            <img src="images/star2.gif" alt="Star" />
+                            <img src="images/star2.gif" alt="Star" />
+                            <img src="images/star1.gif" alt="Star" />
+                            <img src="images/star1.gif" alt="Star" />
+                            <img src="images/star1.gif" alt="Star" />
+                        </span>
+                    </li>
+                    <li><h3>Aliquam Trident Stincidunst Mauris eu Risus</h3>
+                    	<span class="rig">
+                            <img src="images/star2.gif" alt="Star" />
+                            <img src="images/star2.gif" alt="Star" />
+                            <img src="images/star2.gif" alt="Star" />
+                            <img src="images/star2.gif" alt="Star" />
+                            <img src="images/star2.gif" alt="Star" />
+                        </span>
+                    </li>
+                    <li><h3>Microsoft Office</h3>
+                    	<span class="rig">
+                            <img src="images/star2.gif" alt="Star" />
+                            <img src="images/star2.gif" alt="Star" />
+                            <img src="images/star2.gif" alt="Star" />
+                            <img src="images/star2.gif" alt="Star" />
+                            <img src="images/star1.gif" alt="Star" />
+                        </span>
+                    </li>
+                    
+                    <li><h3>Aliquam Trident Stincidunst Mauris eu Risus</h3>
+                    	<span class="rig">
+                            <img src="images/star2.gif" alt="Star" />
+                            <img src="images/star2.gif" alt="Star" />
+                            <img src="images/star2.gif" alt="Star" />
+                            <img src="images/star2.gif" alt="Star" />
+                            <img src="images/star2.gif" alt="Star" />
+                        </span>
+                    </li>
+                    
+                    <li><h3>QuarXpress</h3>
+                    	<span class="rig">
+                            <img src="images/star2.gif" alt="Star" />
+                            <img src="images/star2.gif" alt="Star" />
+                            <img src="images/star2.gif" alt="Star" />
+                            <img src="images/star2.gif" alt="Star" />
+                            <img src="images/star2.gif" alt="Star" />
+                        </span>
+                    </li>
+                    
+                     <li><h3>Microsoft Office</h3>
+                    	<span class="rig">
+                            <img src="images/star2.gif" alt="Star" />
+                            <img src="images/star2.gif" alt="Star" />
+                            <img src="images/star2.gif" alt="Star" />
+                            <img src="images/star2.gif" alt="Star" />
+                            <img src="images/star1.gif" alt="Star" />
+                        </span>
+                    </li>
+                    
+                    <li><h3>Aliquam Trident Stincidunst Mauris eu Risus</h3>
+                    	<span class="rig">
+                            <img src="images/star2.gif" alt="Star" />
+                            <img src="images/star2.gif" alt="Star" />
+                            <img src="images/star2.gif" alt="Star" />
+                            <img src="images/star2.gif" alt="Star" />
+                            <img src="images/star2.gif" alt="Star" />
+                        </span>
+                    </li>
+                    
+                    <li><h3>QuarXpress</h3>
+                    	<span class="rig">
+                            <img src="images/star2.gif" alt="Star" />
+                            <img src="images/star2.gif" alt="Star" />
+                            <img src="images/star2.gif" alt="Star" />
+                            <img src="images/star2.gif" alt="Star" />
+                            <img src="images/star2.gif" alt="Star" />
+                        </span>
+                    </li>
+
+                    
+                </ul>
+
+
+            	</div>
+                  <!--  End content1 -->
+                  
+                  
+            </div>
+            
+
+                    
+        </div>
+        <!--  End post -->
+       
+       
+       
+         </div>
+          <!-- End contright -->
+
+          <div style="clear:both">
+       </div>
+       
+       
+         <div class="element5">
+   <div class="contleft"> 
+     	<div class="left">
+      <h2 style="text-align:right;">Other<br/><span class="orange">Information</span></h2>		</div>
+     </div>
+        
+        <!--  Begin post -->
+        <div class="post">
+        	<div class="post_content">
+            	<div class="partcontent">
+            	
+            	
+            	<h3>References</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+				<br /><br />
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut, lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</p>
+
+            	
+                <h3>Clients</h3>
+                
+                <ul>
+                	<li>One client name;</li>
+                	<li>Another client name;</li>
+                	<li>And one more client name;</li>
+                	<li>Yet another client name;</li>
+                </ul>                
+               
+                <h3>Languages</h3>
+                <ul>
+                	<li>English</li>
+                	<li>French</li>
+                	<li>Spanish</li>
+                </ul>  
+            	</div>
+                  <!--  End content1 -->
+            </div>
+        </div>
+        <!--  End post -->
+         </div>
+          <!-- End contright -->
+
+          <div style="clear:both">
+       </div>
+       
+      
+       
+        
+   </div>
+   <!-- End Main page posts -->
+</div>
+
+<!-- Begin footer -->
+
+ <div class="footer" id="footer">
+   		<p class="copy">Catherine Roberts <span class="orange">|</span> Copyright &copy; 2011 Clean CV </p>
+        <ul class="menufooter">
+        	<li><img src="images/indicador2.jpg" alt="Download CV" /><a href="">Download CV</a></li>
+            <li><img src="images/indicador2.jpg" alt="Print CV" /><a href="javascript:window.print()">Print CV</a></li>
+            <li><img src="images/indicador2.jpg" alt="Email Me" /><a href="">Email Me </a></li>
+        </ul>
+   </div>
+   
+   <!-- End footer -->
+</body>
+</html>
