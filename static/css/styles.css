@@ -1,0 +1,73 @@
+
+.sponsorListHolder{
+	margin-bottom:30px;
+	margin-top:-22px;
+	width:120%;
+}
+
+.sponsor{
+	width:140px;
+	height:140px;
+	float:left;
+	margin:0px 23px 23px 0;
+	
+	/* Giving the sponsor div a relative positioning: */
+	position:relative;
+	cursor:pointer;
+}
+
+.sponsorFlip{
+	/*  The sponsor div will be positioned absolutely with respect
+		to its parent .sponsor div and fill it in entirely */
+
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	border:1px solid #ddd;	
+	background:url("../img/background.jpg") no-repeat center center #f0f0f0;
+}
+
+.sponsorFlip:hover{
+	border:1px solid #b15815;
+	
+	/* CSS3 inset shadow: */
+	-moz-box-shadow:0 0 30px #999 inset;
+	-webkit-box-shadow:0 0 30px #999 inset;
+	box-shadow:0 0 30px #999 inset;
+}
+
+.sponsorFlip img{
+	/* Centering the logo image in the middle of the sponsorFlip div */
+	
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin:-70px 0 0 -70px;
+}
+
+.sponsorData{
+	/* Hiding the .sponsorData div */
+	display:none;
+}
+
+.sponsorDescription{
+	font-size:11px;
+	padding:30px 15px 10px 15px;
+	color:#999999;
+	text-align:left;
+}
+
+.sponsorURL{
+	font-size:10px;
+	font-weight:bold;
+	padding-left:20px;
+	color:#b15815;
+}
+
+.clear{
+	/* This class clears the floats */
+	clear:both;
+}
+

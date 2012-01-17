@@ -1,0 +1,563 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body {height: 100%;}
+
+.wrap {min-height: 67%;}
+
+.main_page_posts {overflow:auto;
+	padding-bottom: 0px;} 
+
+body {
+	font-size:11px;
+	font-family: Arial,Helvetica,sans-serif;
+	color:#bdb49f;
+	margin:0;
+	padding:0;
+	background:transparent url(../images/fondo.jpg) repeat 0 0;
+	
+	
+}
+
+
+a{
+	text-decoration:none;
+	color:#b15815;
+}
+
+
+p {
+	padding:5px 0px 10px 0;
+	line-height:17px;
+	color:#bdb49f;
+}
+
+ul{
+margin:10px 0 25px 0;
+padding:0 0 0 15px;
+list-style:square;
+}
+
+
+
+.wrap {
+	width:850px;
+	margin:0 auto;
+}
+
+.cont{
+margin:0px 0 0 0;
+padding:10px 0 5px 0;
+height:40px;
+border-bottom:4px solid #a8af3f;
+}
+
+.contheader {
+	width:100%;
+}
+
+
+.contmenu{
+	width:850px;
+	margin:auto;
+	background:transparent url(../images/imgsup.png) no-repeat 0 0;
+	height:69px;
+	}
+
+.header {
+	width:850px;
+	margin:11px auto;
+	background:transparent url(../images/fondocab.png) no-repeat 0 0;
+	height:152px;
+	position:relative;
+	overflow:hidden;
+	}
+	
+.cont2 {
+	width:850px;
+	margin:0 auto;
+	background:transparent url(../images/fondocab.png) no-repeat 0 0;
+	}
+
+
+
+/* Text elements
+-------------------------------------------------------------- */
+
+.header h1{
+	font-size:30px;
+	padding:0px 0px;
+	display:block;
+	float:left;
+	font-weight:100;
+}
+
+
+.header a.image{
+	display:block;
+	height:114px;
+	width:121px;
+	padding:18px 16px 16px 16px;
+}
+
+.header a.image img{
+	border:none;
+}
+
+.header h1 a:hover{
+	text-decoration:none;
+}
+
+h1 {
+	font-size:36px;
+	padding:20px 0px;
+	display:block;
+	color:white;
+}
+
+h2 {
+	padding:20px 0px;
+}
+
+h3 {
+	padding:20px 0px;
+}
+
+h4 {
+	font-size:14px;
+	font-weight:normal;
+	padding:0px 0px;
+	margin:0 0 0 10px;
+	color:#315e86;
+}
+
+h5 {
+	font-size:14px;
+	font-weight:normal;
+	padding:20px 0px;
+}
+
+
+
+
+
+label {
+	float:left;
+}
+
+
+
+.holder {
+	float:left;
+	width:100%;
+	margin:0px 0px 10px 0px;
+	clear:both;
+}
+
+
+
+/* Navigation 
+-------------------------------------------------------------- */
+
+.menup { float:right; margin-right:5px; margin-top:-1px; z-index : 9}
+ul.menu {list-style:none; margin:-26px 28px 0 0; padding:0;  z-index : 9}
+ul.menu * {margin:0; padding:0;  z-index : 9}
+ul.menu a {display:block; text-decoration:none; font-weight:normal; font-size:11px;  letter-spacing:0px; cursor:pointer}
+ul.menu li {float:left; margin-right:42px;}
+ul.menu li a {position:relative; float:left; margin-right:2px; border-left:2px solid #b15815; padding:40px 10px 0px 10px; font-size:17px}
+ul.menu li a span{color:#bdb49f; font-size:17px}
+
+ul.menu li a:hover {border-left:2px solid #bdb49f; }
+ul.menu li a.activo {border-left:2px solid #bdb49f; }
+
+
+
+/* Social
+-------------------------------------------------------------- */
+.social{padding:0px 0 0 18px;position:absolute; top:0px; margin-left:18px;}
+
+div.soc a{display:block;
+	height:129px;
+	width:38px;
+	text-indent:-9999px;
+	margin-top:-95px;
+	outline:none;
+	}
+
+.soc{float:left; margin-right:4px;}
+#social1{
+	background:transparent url(../images/facebook.png) no-repeat 0 0;
+}
+
+#social2{
+	background:transparent url(../images/twitter.png) no-repeat 0 0;
+}
+
+#social3{
+	background:transparent url(../images/linkedin.png) no-repeat 0 0;
+}
+
+
+.clear {
+	clear: both;
+}
+
+
+/* Header content
+-------------------------------------------------------------- */
+
+
+.logo {
+	float:left;
+	font-size:11px;
+	margin-left:18px;
+	margin-top:2px;
+}
+
+.info {
+	float:right;
+	font-size:11px;
+	width:630px;
+	padding:0 40px 0 0;
+	margin-top:37px;
+	margin-bottom:100px;
+}
+
+.info h1 {
+	margin:0;
+	padding:0;
+	font-size:38px;
+	}
+
+.info h2.work{
+	float:left;
+	margin:0;
+	padding:0;
+	font-size:34px;
+}
+
+.info h2.telf{
+	float:right;
+	margin:0;
+	padding:0;
+	font-size:32px;
+}
+
+.info h3.dir{
+	float:left;
+	margin:0;
+	padding:0;
+	font-size:18px;
+	line-height:1.5em;
+	margin:18px 0 0 0;
+
+}
+
+.info h3.mail{
+	float:right;
+	margin:18px 0 0 0;
+	padding:0;
+	font-size:18px;
+	text-align:right;
+	line-height:1.5em;
+}
+
+
+.info2 {
+	float:right;
+	font-size:11px;
+	width:630px;
+	padding:0px 40px 0px 0;
+	margin-top:37px;
+}
+
+.info2 h1 {
+	margin:0;
+	padding:0;
+	font-size:38px;
+	}
+
+.info2 h2.work{
+	float:left;
+	margin:0;
+	padding:0;
+	font-size:34px;
+}
+
+.info2 h2.telf{
+	float:right;
+	margin:0;
+	padding:0;
+	font-size:32px;
+}
+
+.info2 h3.dir{
+	float:left;
+	margin:0;
+	padding:0;
+	font-size:14px;
+}
+
+.info2 h3.mail{
+	float:right;
+	margin:18px 0 0 0;
+	padding:0;
+	font-size:18px;
+	text-align:right;
+	line-height:1.5em;
+}
+
+.info2 h3.dir{
+	float:left;
+	margin:0;
+	padding:0;
+	font-size:18px;
+	line-height:1.5em;
+	margin:18px 0 0 0;
+
+}
+
+
+.line{
+	border-bottom:1px dotted #d0d1d3;
+	margin:5px 0 0 0;
+}
+
+.line2{
+	margin:5px 0;
+}
+
+
+/* Column left
+-------------------------------------------------------------- */
+
+
+.contleft{
+	float:left;
+	}
+.left{
+	height:180px;
+	width:140px;
+	padding: 0 17px 0 0;
+	border-right:1px solid #bdb49f;
+	}
+	
+.left h2{
+	font-size:22px;
+	margin:0;
+	padding:7px 0 0 0;
+	line-height:24px;
+	text-transform:uppercase;
+	}
+	
+	
+.left ul.tips{
+	margin:-10px 0 0 0;
+	padding:0;
+	list-style:none;
+	font-size:11px;
+	}
+	
+.left ul.tips li{
+	border-bottom:1px dashed #ffffff;
+	padding: 7px 0;
+	color:white;
+	}
+	
+	
+.sup{
+	height:6px;
+	background:transparent url('../images/leftup.jpg') no-repeat 0 0;
+	}
+	
+.cen{
+	background:transparent url('../images/left-center.jpg') repeat-y 3px 0;
+	padding:12px;
+	}
+	
+.inf{
+	height:6px;
+	background:transparent url('../images/leftdown.jpg') no-repeat -1px 0;
+	}
+
+span.rig{
+	float:right;
+	margin-right:3px;
+	margin-top:-15px;
+	}
+	
+	
+/* Column center
+-------------------------------------------------------------- */
+	
+.post{
+	float:right;
+	width:634px;
+	padding:0 40px 10px 15px;
+	text-align:justify;
+	line-height:1.6em;
+	margin-top:0px;
+	overflow-x:hidden;
+	}
+
+.post_content h2{
+	color: #bbbdbe;
+	padding:15px 0;
+	margin:0;
+	font-size:18px;
+	}
+	
+.post_content h3{
+	color:#bdb49f;
+	padding:0;
+	margin:8px 0 0 0;
+	font-size:22px;
+	}
+	
+.post_content h4 {
+	font-size:14px;
+	font-weight:normal;
+	padding:0px 0px;
+	margin:0 0 0 0px;
+	color:#bdb49f;}
+	
+.post_content p.date{
+	color:#b15815;
+	padding:0;
+	margin:0;
+	font-size:11px;
+	margin-bottom:-10px;
+	}
+	
+span.orange{
+	color:#b15815;
+	}
+
+
+
+/* Footer 
+-------------------------------------------------------------- */
+
+.footer{
+	width:802px;
+	background:transparent url(../images/imginf.png) no-repeat 0 0;
+	height:39px;
+	margin:0 auto;
+	padding:12px 20px 0px 30px;
+	position:relative;
+	
+	}
+	
+#footer {
+	height: 55px;
+	clear:both;} 
+	
+.footer p{
+padding-bottom:0;
+padding-top:4px;
+}
+
+/*Opera Fix*/
+body:before {/* thanks to Maleika (Kohoutec)*/
+content:"";
+height:60%;
+float:left;
+width:0;
+margin-top:-32767px;/* thank you Erik J - negate effect of float*/
+}
+
+
+
+.footer .copy {
+	float:left;
+}
+
+
+.menufooter{
+	float:right;
+	margin-top:17px;
+	}
+	
+.menufooter li{
+	float:left;
+	margin-right:10px;
+	list-style:none;
+	}
+	
+.menufooter li img{
+	margin-right:5px;
+	}
+	
+.menufooter li a{
+	text-decoration:none;
+	color:#bdb49f;
+	}
+	
+.menufooter li a:hover{
+	color:#b15815;
+	}
+	
+.cur{
+background:transparent url(../images/cur.png) no-repeat 0 0;
+height:16px;
+width:8px;
+float:left;
+margin:18px 0 0 11px;
+}
+
+.cur2{
+background:transparent url(../images/cur.png) no-repeat 0 0;
+height:16px;
+width:8px;
+float:right;
+margin:18px 11px 0 0px;
+}
+
+.top{
+	text-indent:-9999px;
+	height:25px;
+	width:60px;
+	display:block;
+	background: transparent url(../images/arrow2.png) no-repeat 0 0;
+	outline:none;
+}
+
+.down{
+	text-indent:-9999px;
+	height:20px;
+	width:28px;
+	display:block;
+	}
+
+.botones{
+position:absolute;
+margin:-170px 0 0 755px;
+}
+
+ul.tips{
+	margin:-10px 0 0 0;
+	padding:0;
+	list-style:none;
+	}
+	
+ul.tips h3{
+	font-size:18px;
+	}
+	
+ ul.tips li{
+	border-bottom:1px dashed #6b6457;
+	padding: 8px 0 13px 0;
+	color:white;
+	}
+	
+	
+
+.element1{
+	border:1px solid transparent;
+	}
+
+
+.element2, .element3, .element4, .element5{
+	border:1px solid transparent;
+	display:none;
+	}
